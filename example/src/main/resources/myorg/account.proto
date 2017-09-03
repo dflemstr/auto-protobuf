@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package myorg.schema;
+
+option java_package = "com.myorg.account";
+
+import "google/protobuf/field_mask.proto";
+
+message Person {
+    string name = 1;
+    google.protobuf.FieldMask field_mask = 2;
+}
